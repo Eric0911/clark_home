@@ -1,0 +1,81 @@
+#options {
+    height: 85px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #eaf3f3;
+}
+
+.left_option{
+    width: 20%;
+}
+
+.right_option{
+    width: 80%;
+}
+
+#banner {
+    display: flex;
+}
+
+#my_posts {
+    height: 730px;
+    background-color: #eaf3f3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog, .shop {
+    background-size: cover;
+    width: 50%;
+    height: 1000px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 80px;
+    font-family: playfairdisplay-bold;
+    color: white;
+}
+
+.blog {
+    background-image: url("/image/blog_photo.jpg");
+}
+
+.shop {
+    background-image: url("/image/shop_photo.jpg");
+}
+
+.name_posts {
+    padding: 75px 0 25px 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(124, 100, 14, 1);
+    font-size: 17px;
+}
+
+.posts_title{
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: playfairdisplay-bold;
+}
+
+#goods {
+    height: 810px;
+    border: 1px solid #000000;
+}
+
+#self_introduce {
+    height: 520px;
+    border: 1px solid #000000;
+}
+
+#follow_me {
+    height: 1650px;
+    border: 1px solid #000000;
+}
+
+#sign_up {
+    height: 730px;
+    border: 1px solid #000000;
+
+}
