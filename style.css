@@ -37,11 +37,11 @@
 }
 
 .blog {
-    background-image: url("/image/blog_photo.jpg");
+    background-image: url("./image/blog_photo.jpg");
 }
 
 .shop {
-    background-image: url("/image/shop_photo.jpg");
+    background-image: url("./image/shop_photo.jpg");
 }
 
 .name_posts {
