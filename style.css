@@ -18,13 +18,7 @@
     display: flex;
 }
 
-#my_posts {
-    height: 730px;
-    background-color: #eaf3f3;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.blog, .shop {
+.blog_photo, .shop_photo {
     background-size: cover;
     width: 50%;
     height: 1000px;
@@ -36,11 +30,11 @@
     color: white;
 }
 
-.blog {
+.blog_photo {
     background-image: url("./image/blog_photo.jpg");
 }
 
-.shop {
+.shop_photo {
     background-image: url("./image/shop_photo.jpg");
 }
 
@@ -48,20 +42,117 @@
     padding: 75px 0 25px 0;
     display: flex;
     justify-content: center;
-    color: rgb(124, 100, 14, 1);
+    color: rgb(32, 111, 14);
     font-size: 17px;
 }
 
-.posts_title{
+.posts_title, .goods_title{
     display: flex;
     justify-content: center;
     font-size: 36px;
     font-family: playfairdisplay-bold;
 }
 
+#my_posts {
+    background-color: #eaf3f3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    height: 750px;
+}
+
+.blog{
+    display: flex;
+    justify-content: center
+}
+
+.arts{
+    border: 1px solid #000000;
+    margin: 45px 15px 40px 15px;
+    width: 310px;
+    height: 440px;
+}
+
+.arts_photo_1, .arts_photo_2, .arts_photo_3{
+    background-size: cover;
+    width: 310px;
+    height: 230px;
+}
+
+.arts_photo_1{
+    background-image: url("./image/photo_1.jpg");
+}
+
+.arts_photo_2{
+    background-image: url("./image/photo_2.jpg");
+}
+
+.arts_photo_3{
+    background-image: url("./image/photo_3.jpg");
+}
+
+.arts_word{
+    padding: 28px 16px 25px;
+}
+
+.arts_time{
+    font-size: 12px;
+    padding: 0px 0px 12px;
+}
+
+.arts_title{
+    font-size: 22px;
+    font-family: playfairdisplay-bold;
+}
+
+.read_more{
+    display: block;
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    margin: 0 auto 10px;
+    border: 1px solid #000000;
+}
+
 #goods {
     height: 810px;
     border: 1px solid #000000;
+}
+
+.goods_title{
+    margin: 100px 0px 60px;
+}
+
+.goods_banner{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.goods_photo_1, .goods_photo_2, .goods_photo_3, .goods_photo_4{
+    background-size: cover;
+    width: 220px;
+    height: 330px;
+    margin-bottom: 35px;
+}
+
+.goods_photo_1{
+    background-image: url("./image/goods_photo_1.jpg");
+}
+
+.goods_photo_2{
+    background-image: url("./image/goods_photo_2.jpg");
+}
+
+.goods_photo_3{
+    background-image: url("./image/goods_photo_3.jpg");
+}
+
+.goods_photo_4{
+    background-image: url("./image/goods_photo_4.jpg");
+}
+
+.goods_word{
+    text-align: center;
+    font-size: 17px;
 }
 
 #self_introduce {
