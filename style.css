@@ -4,20 +4,46 @@
     display: flex;
     align-items: center;
     background-color: #eaf3f3;
+    padding: 0 90px;
+    justify-content: space-between;
 }
 
 .left_option{
-    width: 20%;
     text-decoration: none;
+    width: 20%;
+    font-size: 20px;
+    font-family: playfairdisplay-bold;
+    font-weight: bold;
 }
 
-.left_option a, .right_option a, .arts_title a{
+.left_option a, .pagination a, .social_media a, .arts_title a{
     text-decoration: none;
     color: black;
 }
 
 .right_option{
+    display: flex;
+    align-items: center; 
     width: 80%;
+    justify-content: space-between;
+}
+
+.pagination{
+    width: 50%;
+    text-align: right;
+}
+
+
+.pagination a{
+    padding: 0 10px;
+}
+
+.search{
+    width: 20%;
+}
+
+.search img{
+    height: 26px;
 }
 
 #banner {
@@ -48,7 +74,7 @@
     padding: 75px 0 25px 0;
     display: flex;
     justify-content: center;
-    color: rgb(32, 111, 14);
+    color: rgb(79 97 75);
     font-size: 17px;
 }
 
@@ -112,6 +138,32 @@
 .arts_title{
     font-size: 22px;
     font-family: playfairdisplay-bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #586c58;
+    height: 75px;
+    margin-bottom: 15px;
+}
+
+.reaction{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view_numbers{
+    display: flex
+}
+
+.view_numbers img{
+    height: 19px;
+    width: 19px;
+}
+
+.view_numbers .view_number{
+    padding: 2px 0 2px 6px;
+}
+
+.like_numbers img{
+    cursor: pointer;
 }
 
 .read_more, .view_all{
@@ -243,11 +295,45 @@
     height: auto;
 }
 
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    display: block;
+    transition: filter 0.3s ease;
+}
+
+/* 1. 滑鼠移入變暗 */
+.image-container:hover img {
+    filter: brightness(30%);
+}
+
+/* 2. 標籤（預設隱藏） */
+.label {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+/* 3. 滑鼠移入時顯示標籤 */
+.image-container:hover .label {
+    opacity: 1;
+}
+
 .row{
     display: block;
 }
 
-.row_small_even{
+.row_small_even, .row_small_even .image-container{
     display: flex;
     gap: 10px;
     padding-bottom: 5px;
@@ -278,6 +364,7 @@
 .social_media img{
     width: 24px;
     height: 24px;
+    align-items: center;
 }
 
 .sign_up_for{
